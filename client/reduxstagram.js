@@ -16,7 +16,7 @@ import { Provider } from 'react-redux';
 import store, { history } from './store';
 
 const router = (
-    <Provider>
+    <Provider store={store}>
         <Router history={history}>
             <Route path="/" component={Main}>
                 <IndexRoute component={PhotoGrid}></IndexRoute>
