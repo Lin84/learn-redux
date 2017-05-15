@@ -6,7 +6,7 @@ import { render } from 'react-dom';
 import css from './styles/style.styl';
 
 // import component:
-import Main from './components/Main';
+import App from './components/App'; // App component collect every state and functions  from Provider and passed it directly to Main (representional component)
 import Single from './components/Single';
 import PhotoGrid from './components/PhotoGrid';
 
@@ -18,7 +18,7 @@ import store, { history } from './store';
 const router = (
     <Provider store={store}>
         <Router history={history}>
-            <Route path="/" component={Main}>
+            <Route path="/" component={App}>
                 <IndexRoute component={PhotoGrid}></IndexRoute>
                 <Route path="/view/:postId" component={Single}></Route>
             </Route>

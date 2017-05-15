@@ -1,3 +1,4 @@
+// representional component, that will get every state and function passed through the App Component
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 
