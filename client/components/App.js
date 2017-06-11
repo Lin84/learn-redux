@@ -5,7 +5,6 @@ import Main from './Main';
 
 // surface and get all state to pass to Main component
 function mapStateToProps(state) {
-
     return {
         posts: state.posts,
         comments: state.comments
@@ -15,9 +14,7 @@ function mapStateToProps(state) {
 
 // surface and get all functions to pass to Main Component
 function mapDispachToProps(dispatch) {
-
-    return bindActionCreators(actionCreators,dispatch);
-
+    return bindActionCreators(actionCreators, dispatch);
 }
 
 const App = connect(mapStateToProps, mapDispachToProps)(Main); // call against Main component and add every state and all actionCreators functions and add it to Main component. so you DONT HAVE TO PASS AS PROPS FROM PROVIDER DOWN UNTIL MAIN COMPONENT.
