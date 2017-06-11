@@ -3,16 +3,15 @@ import { connect } from 'react-redux';
 import * as actionCreators from '../actions/actionCreators';
 import Main from './Main';
 
-// surface and get all state to pass to Main component
+// surface and get ALL STATES to pass to Main component
 function mapStateToProps(state) {
     return {
         posts: state.posts,
         comments: state.comments
     };
-
 }
 
-// surface and get all functions to pass to Main Component
+// surface and get ALL FUNCTIONS to pass to Main Component
 function mapDispachToProps(dispatch) {
     return bindActionCreators(actionCreators, dispatch);
 }
