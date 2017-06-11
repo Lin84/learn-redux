@@ -8,7 +8,6 @@ export function increment(index) {
 
 // add comment
 export function addComment(postId, author, comment) {
-    console.log('firing addComment');
     return {
         type: 'ADD_COMMENT',
         postId,
