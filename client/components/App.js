@@ -17,5 +17,6 @@ function mapDispachToProps(dispatch) {
 }
 
 const App = connect(mapStateToProps, mapDispachToProps)(Main); // call against Main component and add every state and all actionCreators functions and add it to Main component. so you DONT HAVE TO PASS AS PROPS FROM PROVIDER DOWN UNTIL MAIN COMPONENT.
+console.log('try push');
 
 export default App;
